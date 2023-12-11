@@ -5,35 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hillel</title>
     <script>
-      /// asdf
+      let a = 2;
+      const b = 1;
+      const bdf = "adf";
+      console.log(a <= b);
+      const c = 5;
+      const d = 6;
 
-      console.log(4 + 4);
-      /* 
-      alert("Hello from alert");
-            const yourName = prompt("What is your name?");
-      const your = 5; */
-      let num = 34;
-      const petro = {
-        age: 34,
-        name: "Petro",
-        methods: {
-          first: "First method",
-          second: "Second method",
-        },
-      };
-      const emptyObject = {};
+      function sum(a, b) {
+        const c = a + b;
+        return c;
+      }
 
-      emptyObject.age = 134;
-      emptyObject.name = "Hello from name";
-      emptyObject.age = 34;
-      const volodya = {
-        age: 38,
-        name: "Volodya",
-      };
+      console.log(sum(c, a));
 
-      console.log(emptyObject.name);
-
-      console.log(petro);
+      console.log(sum(c, a));
+      console.log(sum(d, a));
+      console.log(sum(c, a));
+      console.log(sum(a, a));
+      console.log(sum(c, a));
     </script>
   </head>
   <body>
