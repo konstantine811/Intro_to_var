@@ -5,10 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      function circleArea(r) {
-        return Math.PI * Math.pow(r, 2);
+      const actionsCalculation = {
+        add: "add",
+        dif: "dif",
+        multiple: "multiple",
+        division: "division",
+      };
+      function calculator(a, b, type) {
+        if (type === actionsCalculation.add) {
+          return a + b;
+        } else if (type === actionsCalculation.dif) {
+          return a - b;
+        } else if (type === actionsCalculation.multiple) {
+          return a * b;
+        } else if (type === actionsCalculation.division) {
+          return a / b;
+        } else {
+          console.error("not get type of calculation");
+        }
       }
-      console.log(circleArea(8));
+
+      console.log(
+        actionsCalculation.add + " " + calculator(3, 4, actionsCalculation.add)
+      );
+      console.log(
+        actionsCalculation.dif + " " + calculator(3, 4, actionsCalculation.dif)
+      );
+      console.log(
+        actionsCalculation.multiple +
+          " " +
+          calculator(3, 4, actionsCalculation.multiple)
+      );
+      console.log(
+        actionsCalculation.division +
+          " " +
+          calculator(3, 4, actionsCalculation.division)
+      );
     </script>
   </head>
   <body></body>
