@@ -4,44 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script>
-      const actionsCalculation = {
-        add: "add",
-        dif: "dif",
-        multiple: "multiple",
-        division: "division",
-      };
-      function calculator(a, b, type) {
-        if (type === actionsCalculation.add) {
-          return a + b;
-        } else if (type === actionsCalculation.dif) {
-          return a - b;
-        } else if (type === actionsCalculation.multiple) {
-          return a * b;
-        } else if (type === actionsCalculation.division) {
-          return a / b;
-        } else {
-          console.error("not get type of calculation");
-        }
-      }
-
-      console.log(
-        actionsCalculation.add + " " + calculator(3, 4, actionsCalculation.add)
-      );
-      console.log(
-        actionsCalculation.dif + " " + calculator(3, 4, actionsCalculation.dif)
-      );
-      console.log(
-        actionsCalculation.multiple +
-          " " +
-          calculator(3, 4, actionsCalculation.multiple)
-      );
-      console.log(
-        actionsCalculation.division +
-          " " +
-          calculator(3, 4, actionsCalculation.division)
-      );
-    </script>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./src/index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="page-wrap">
+      <h1 class="title">Hello, Hillel</h1>
+      <div class="check-theme-wrap">
+        <label for="checkTheme" class="check-theme-label">Change theme</label>
+        <input
+          class="check-theme-input"
+          type="checkbox"
+          name=""
+          id="checkTheme"
+        />
+      </div>
+      <h2 class="sub-title">What is variables?</h2>
+    </div>
+  </body>
 </html>
