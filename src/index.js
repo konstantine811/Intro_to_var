@@ -5,6 +5,22 @@ function documentOnReady() {
 
   const black = "#151515";
   const white = "#aaaaaa";
+
+  const obj = {
+    first: "first",
+    second: "second",
+    third: "third",
+  };
+  const arr = ["📐", "🌤️", "🇲🇽", "1️⃣", "🈹", "🌜", "👨‍💻"];
+
+  for (let i = 0; i < arr.length; i++) {
+    console.log("element from simple for: ", arr[i], i);
+  }
+
+  arr.forEach(function (i, index) {
+    console.log("element from forEach: ", i, index);
+  });
+
   checkThemeEl.addEventListener("change", function () {
     console.log(checkThemeEl.checked);
     const styleObj = document.documentElement.style;
