@@ -95,3 +95,19 @@ body {
     100% - var(--check-input-circle-diameter) - var(--check-input-cirlce-offset)
   );
 }
+
+.smiles-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 388px;
+  gap: 18px;
+  justify-content: center;
+}
+
+.smile-card {
+  background-color: white;
+  padding: 35px;
+  font-size: 46px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 36px 7px #ffffff52;
+}
