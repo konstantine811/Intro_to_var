@@ -98,6 +98,7 @@ body {
   max-width: 388px;
   gap: 18px;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .smile-card {
@@ -123,4 +124,24 @@ body {
 .table td {
   border: 1px solid var(--contrast-color);
   padding: 10px;
+}
+
+.sample-btn-wrap {
+  display: flex;
+  gap: 10px;
+  max-width: 300px;
+  flex-wrap: wrap;
+}
+
+.sample-btn {
+  padding: 30px;
+  max-width: calc(33.3333333333% - 10px);
+  width: 100%;
+  font-size: 30px;
+  background-color: var(--contrast-color);
+  color: var(--primary-color);
+}
+.sample-btn.active {
+  background-color: var(--primary-color);
+  color: var(--contrast-color);
 }
