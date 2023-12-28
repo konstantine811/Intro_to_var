@@ -105,9 +105,27 @@ body {
 }
 
 .smile-card {
-  background-color: white;
+  background-color: var(--contrast-color);
   padding: 35px;
   font-size: 46px;
   border-radius: 8px;
-  box-shadow: 0px 0px 36px 7px #ffffff52;
+  box-shadow: 3px 3px 6px 1px var(--contrast-color);
+}
+
+.table {
+  &-wrap {
+    max-width: 1300px;
+    overflow-x: auto;
+  }
+  border: 1px solid var(--contrast-color);
+  color: var(--contrast-color);
+  font-size: 36px;
+
+  tr {
+    border: 1px solid var(--contrast-color);
+  }
+  td {
+    border: 1px solid var(--contrast-color);
+    padding: 10px;
+  }
 }
