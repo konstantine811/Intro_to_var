@@ -88,10 +88,14 @@ function changeTheme() {
 }
 
 function createSampler() {
-  function getAudioPath(nameAudio, pathToAudio = "./assets/samples/") {
+  function getAudioPath(
+    nameAudio,
+    pathToAudio = "https://konstantine811.github.io/Intro_to_var/blob/assets/samples/"
+  ) {
     return pathToAudio + nameAudio;
   }
-  const pathSampler = "./assets/samples/sampler/";
+  const pathSampler =
+    "https://konstantine811.github.io/Intro_to_var/assets/samples/sampler/";
   const keyBtnNames = [
     {
       key: "q",
