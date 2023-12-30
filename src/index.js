@@ -88,10 +88,10 @@ function changeTheme() {
 }
 
 function createSampler() {
-  function getAudioPath(nameAudio, pathToAudio = "../assets/samples/") {
+  function getAudioPath(nameAudio, pathToAudio = "./assets/samples/") {
     return pathToAudio + nameAudio;
   }
-  const pathSampler = "../assets/samples/sampler/";
+  const pathSampler = "./assets/samples/sampler/";
   const keyBtnNames = [
     {
       key: "q",
