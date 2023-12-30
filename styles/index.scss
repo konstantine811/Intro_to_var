@@ -146,7 +146,8 @@ body {
   background-color: var(--contrast-color);
   color: var(--primary-color);
   &.active {
-    background-color: var(--primary-color);
+    background-color: red;
     color: var(--contrast-color);
+    box-shadow: 0px 0px 36px 3px red;
   }
 }
